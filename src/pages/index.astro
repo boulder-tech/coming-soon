@@ -3,8 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Image } from 'astro:assets';
-import illustrationImage from "../../public/rocket.png";
 ---
 
 <!doctype html>
@@ -16,11 +14,9 @@ import illustrationImage from "../../public/rocket.png";
 		<Header />
 		<main>
 			<div class="text">
-				<h1>Maintenance Mode</h1>
-				<p>We are adding new features, the app will be operational really soon!</p>
-				<p>If you have any questions or need assistance, feel free to reach out to us at <a href="mailto:support@bouldertech.fi">support@bouldertech.fi</a>.</p>
+				<h1>{"Launching early September '25"}</h1>
+				<p>We are building the marketplace for tokenized companies and funds in Latam. Stay tuned for access to unique private market opportunities!</p>
 			</div>
-			<Image src={illustrationImage} alt={"Illustration of a rocket"} width={500}/>
 		</main>
 		<Footer />
 	</body>
@@ -32,7 +28,7 @@ import illustrationImage from "../../public/rocket.png";
 			align-items: center;
 		}
 		h1 {
-			color: var(--white-light)
+			color: #3A3A3A
 		}
 		.text {
 			text-align: center;
@@ -40,10 +36,13 @@ import illustrationImage from "../../public/rocket.png";
 			flex-direction: column;
 			gap: 2px;
 			margin-bottom: 8px;
+			max-width: 42rem;
+			padding-top: 5rem;
+			padding-bottom: 5rem;
 		}
 		p {
 			margin: 0;
-			color: #e1e1e1
+			color: #3A3A3A
 		}
 	</style>
 </html>
